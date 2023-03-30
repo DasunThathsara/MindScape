@@ -34,3 +34,15 @@
     box-shadow: 0 1px 10px 0.1px rgba(0, 0, 0, 0.375);
     transition: 0.5s;
 }
+
+.login_div{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    background-color: rgba(210, 213, 218, 0.9);
+    border-radius: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
