@@ -58,3 +58,43 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.img{
+    width: 35%;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    z-index: -1;
+}
+
+.h1{
+    font-family: "Open Sans";
+    font-size: 28px;
+    margin-top: 15px;
+}
+
+.message{
+    width: 75%;
+}
+
+.image{
+    width: 25%;
+}
+
+.options{
+    background-color: rgba(24, 119, 242, 0.28);
+    border-radius: 20px;
+    padding: 15%;
+    margin: 5px;  
+    color: black;
+    height: 100px;
+}
+
+table{
+    margin-top: 20%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
