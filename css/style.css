@@ -27,8 +27,10 @@
     margin-top: 10%;
     font-size: 20px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .btn:hover{
-    box-shadow: 0 1px 10px 0.1px rgba(0, 0, 0, 0.707);
+    box-shadow: 0 1px 10px 0.1px rgba(0, 0, 0, 0.375);
+    transition: 0.5s;
 }
