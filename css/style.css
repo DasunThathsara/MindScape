@@ -3,7 +3,7 @@
 }
 
 body{
-    height: 800px;
+    height: 850px;
   }
 
 .welcome_footer{
@@ -222,12 +222,6 @@ a{
   }
 
   /*---------------- Reading Section -> top rated section ----------------*/
-  .container {
-    position: relative;
-    text-align: center;
-    color: rgb(69, 2, 255);
-    z-index: 1;
-  }
   
   .bottom-left {
     position: absolute;
