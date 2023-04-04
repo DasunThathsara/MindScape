@@ -98,17 +98,8 @@ a{
     text-decoration: none;
 }
 
-.menu{
-    width: 7%;
-    position: absolute;
-    right: 3%;
-    top: 3%;
-}
 
-.mimg{
-    width: 100%;
-}
-
+/*--------------------------------- Reading Section ---------------------------------*/
 .back{
     width: 7%;
     position: absolute;
@@ -116,10 +107,109 @@ a{
     top: 3%;
 }
 
+.rh1{
+    font-family: "Open Sans";
+    font-size: 28px;
+    position: absolute;
+    left: 30%;
+    top: 0.1%;
+    z-index: 1;
+}
+
+.rec{
+    top: 15%;
+    position: absolute;
+}
+
 .bimg{
-    width: 100%;
+    width: 5%;
 }
 
 .header{
     align-items: center;
 }
+
+.search{
+    width: 95%;
+    margin-bottom: 10%;
+    top: 10%;
+    position: absolute;
+}
+
+.form-control{
+    width: 95%;
+    height: 45px;
+    font-size: 20px;
+    background-color: rgba(24, 119, 242, 0.28);
+    border-radius: 20px; 
+    font-family:Arial, FontAwesome;
+    border: 0px;
+}
+
+.readingSection{
+    margin-top: 1%;
+    width: 95%;
+    top: 20%;
+    position: absolute;
+    padding-left: 5%;
+    padding-right: 4%;
+}
+
+.footer_b{
+    border: 1px solid rgb(255, 255, 255);
+    border-top-color:rgba(0, 0, 0, 0.653)
+}
+
+.Rdimg{
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    bottom: 28%;
+    z-index: 1;
+}
+
+
+.mobile-container {
+    max-width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .active {
+    background-color: #ffffff;
+    color: white;
+  }
