@@ -11,7 +11,7 @@
     <script src="javascript/script.js"></script>
 </head>
 <body>
-    <div class="header welcome">
+    <div class="welcome">
 
         <div class="back">
             <img class="bimg" src="images/back.png" alt="Header animal" class="img">
@@ -25,8 +25,11 @@
             <img class="mimg" src="images/menu.png" alt="Header animal" class="img">
         </div>
 
-    </div>
-    <div class="welcome">
+        <!--Search bar-->
+        <div class="search">
+            <input type="text" id="search" class="form-control" style="border-radius: 50px;" aria-describedby="passwordHelpInline" placeholder="Search" required>
+            <button type="button" class="btn" style="border-radius: 50px; background-color: #042565; width:100%; color: white;" onclick="search()">Search</button>
+
         <table>
             <tr>
                 <th style="width: 50%;">
