@@ -59,7 +59,7 @@
     padding-right: 5%;
 }
 
-.img{
+.dimg{
     width: 35%;
     position: absolute;
     right: 0px;
@@ -96,4 +96,30 @@ table{
 
 a{
     text-decoration: none;
+}
+
+.menu{
+    width: 7%;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.mimg{
+    width: 100%;
+}
+
+.back{
+    width: 7%;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.bimg{
+    width: 100%;
+}
+
+.header{
+    align-items: center;
 }
