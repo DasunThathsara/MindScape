@@ -318,7 +318,7 @@ img {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 85%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
