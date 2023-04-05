@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meditation Section</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <!-------------------------Navigation bar------------------------->
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="dashboard.html" class="active"><img class="bimg" src="images/back.png" alt="Header animal" class="img"></a>
+                <div id="myLinks">
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div> 
+        </div>
+    
+        <!-------------------------Slide Show------------------------->
+        <div class="slideshow-container" style="height: 100%;">
+            <div class="mySlides fade">
+                <h1>Time to Meditate</h1>
+                <p style="padding-left: 6%; padding-right: 6%;"> Practice of focusing the mind & cultivating a sense of calm and inner peace.</p>
+                <img src="images/meditation_main.png" style="width:90%;">
+                <p style="padding-left: 6%; padding-right: 6%;">Let’s enter into the quiet world that's already there - buried under the 50,000 thoughts the average person thinks every day.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <h1>Meekata daanna ekk na 1</h1>
+            </div>
+
+            <div class="mySlides fade">
+                <h1>Meekata daanna ekk na 2</h1>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div class="mfooter">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" dactive", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " dactive";
+            }
+        </script>
+
+    </body>
+</html> 
