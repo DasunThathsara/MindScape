@@ -391,3 +391,31 @@ img {
     bottom: 3%;
     width: 100%;
 }
+
+/*------------------------------Game Section------------------------------*/
+.gtable{
+    margin-top: 5%;
+    width: 100%;
+}
+
+.game{
+    margin-top: 10%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.img-caption{
+    text-align: center;
+    font-size: 50%;
+    margin-top: 5px;
+}
+
+.img-des{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.img-title{
+    margin: 0px;
+    padding: 0px;
+}
