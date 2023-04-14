@@ -8,7 +8,13 @@
 
 body{
     height: 850px;
-  }
+    overflow-x: hidden;
+    background-image: url("../images/bg_1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0.5s;
+}
 
 .welcome_footer{
     width: 100%;
@@ -88,13 +94,23 @@ body{
     width: 25%;
 }
 
-.options{
+/* .options{
     background-color: rgba(24, 119, 242, 0.28);
     border-radius: 20px;
     padding: 15%;
     margin: 5px;  
     color: black;
     height: 100px;
+} */
+
+.options{
+  background-color: rgba(4, 131, 51, 0.325);
+  border-radius: 20px;
+  padding: 15%;
+  margin: 5px;  
+  color: black;
+  height: 100px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.299);
 }
 
 table{
@@ -182,14 +198,14 @@ a{
 
 .mobile-container {
     max-width: 100%;
-    color: white;
-    background-color: #ffffff;
+    color: rgba(255, 0, 0, 0);
+    background-color: #ff000000;
     border-radius: 10px;
   }
   
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #33333300;
     position: relative;
     width: 100%;
     height: 100%;
@@ -199,7 +215,7 @@ a{
   .topnav #myLinks {
     display: none;
   }
-  
+
   .topnav a {
     color: rgb(0, 0, 0);
     padding: 20px 20px;
@@ -213,15 +229,16 @@ a{
     position: absolute;
     right: 0;
     top: 0;
+    color: rgb(0, 0, 0);
   }
   
   .topnav a:hover {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     color: black;
   }
   
   .active {
-    background-color: #ffffff;
+    background-color: #ffffff00;
     color: white;
   }
 
@@ -424,10 +441,26 @@ img {
 
 /*--------------------------Yoga Section-----------------------------------*/
 
+/* .yoga_options{
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  background-color: #fcf7cabb;
+  margin-top: 10px;
+} */
+
 .yoga_options{
   border-radius: 20px;
   padding: 10px;
   text-align: left;
-  background-color: #FCF7CA;
-  margin-top: 10px;
+  background-color: #fcf7caa2;
+  margin-top: 15px;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.167);
+}
+
+.yh1{
+  position: absolute;
+  top: 15px;
+  width: 95%;
+  font-family: "Open Sans";
 }
