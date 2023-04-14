@@ -420,3 +420,14 @@ img {
     margin: 0px;
     padding: 0px;
 }
+
+
+/*--------------------------Yoga Section-----------------------------------*/
+
+.yoga_options{
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  background-color: #FCF7CA;
+  margin-top: 10px;
+}
