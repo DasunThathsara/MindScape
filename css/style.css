@@ -52,10 +52,12 @@ body{
 .login_div{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 50%;
+    margin-top: 40%;
     padding-top: 15%;
     padding-bottom: 5%;
-    background-color: rgba(210, 213, 218, 0.9);
+    /* background-color: rgba(210, 213, 218, 0.9); */
+    background-color: rgba(4, 131, 51, 0.204);
+    box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.299);
     border-radius: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -64,10 +66,12 @@ body{
 .signup_div{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 20%;
+    margin-top: 15%;
     padding-top: 15%;
     padding-bottom: 5%;
-    background-color: rgba(210, 213, 218, 0.9);
+    /* background-color: rgba(210, 213, 218, 0.9); */
+    background-color: rgba(4, 131, 51, 0.204);
+    box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.299);
     border-radius: 20px;
     padding-left: 5%;
     padding-right: 5%;
@@ -164,12 +168,12 @@ a{
     width: 95%;
     height: 45px;
     font-size: 20px;
-    background-color: rgba(24, 119, 242, 0.28);
+    background-color: rgba(2, 82, 12, 0.28);
     border-radius: 20px; 
     font-family:Arial, FontAwesome;
     border: 0px;
+    box-shadow: 0 0px 20px -10px rgba(0, 0, 0, 0.299);
 }
-
 .readingSection{
     margin-top: 1%;
     width: 95%;
@@ -463,4 +467,17 @@ img {
   top: 15px;
   width: 95%;
   font-family: "Open Sans";
+}
+
+.yoga_options_detail{
+  border-radius: 20px;
+  padding: 10px;
+  /* text-align: left; */
+  background-color: #fcf7ca82;
+  margin-top: -20px;
+  box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.167);
+}
+
+ol li{
+  padding-top: 10px;
 }
