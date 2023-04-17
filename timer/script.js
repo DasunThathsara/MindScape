@@ -52,6 +52,14 @@ function myFunction1() {
 function myFunction2() {
     var element = document.querySelector('.msg');
     element.classList.toggle("msg_d");
+
+    playAudio();
+}
+
+function playAudio() { 
+    var x = document.getElementById("myAudio"); 
+    x.loop = true;
+    x.play();
 }
 
  
