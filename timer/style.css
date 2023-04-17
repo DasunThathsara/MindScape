@@ -1,0 +1,29 @@
+#countdown{
+  font-size :25px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  color: rgba(31, 82, 2, 0.764);
+}
+
+.timer_btn{
+}
+
+.timer_btn_d{
+  display: none;
+}
+
+.timer{
+  display:none;
+}
+.timer_d{
+  display: grid;
+}
+
+.msg{
+  display:none;
+}
+
+.msg_d{
+  display:grid;
+}

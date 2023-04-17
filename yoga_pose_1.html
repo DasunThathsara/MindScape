@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="timer/style.css">
+    <script src="timer/script.js" defer></script>
 </head>
 <body style="height: 100%;">
 
@@ -32,27 +34,45 @@
         <table>
             <tr>
                 <th>
-                    <a href="yoga_pose_1.html" style="text-decoration: none; color: black;">
-                        <table class="yoga_options_detail">
-                            <tr>
-                                <td style="text-align: left;"><p>Basic Pose</p></td></a>
-                            </tr>
-                            <tr>
-                                <th width="45%"><img src="images/yoga_img_1.png" alt=""></th>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left; font-weight: 500;"><p>
-                                    Begin seated. Your legs outstretched straight in front of you.
-                                    <ol>
-                                        <li>Bend your knees and bring the soles of your feet together as you let your knees fall out to either side.</li>
-                                        <li>Draw your feet in as close to your body as is comfortable. Back off if you feel any pain in your knees.</li>
-                                        <li>Press the outer edges of your feet together strongly. The feet may begin to open like a book. You can encourage this with your hands or hold onto your big toes in a yoga toe lock.</li>
-                                        <li>Sit up tall with a long spine while keeping your shoulder blades on your back and your shoulders moving away from your ears.</li>
-                                    </ol>
-                                </p></td></a>
-                            </tr>
-                        </table>
-                    </a>
+                    <table class="yoga_options_detail">
+                        <tr>
+                            <td style="text-align: left;"><p class="yoga_title">Basic Pose</p></td></a>
+                        </tr>
+                        <tr>
+                            <th width="45%"><img src="images/yoga_img_1.png" alt=""></th>
+                        </tr>
+                        <tr>
+                            <td style="text-align: left; font-weight: 500;">
+                                <div class="yoga_dis">
+                                    <h3>Instructions</h3>
+                                    <p>
+                                        Begin seated. Your legs outstretched straight in front of you.
+                                        <ol>
+                                            <li>Bend your knees and bring the soles of your feet together as you let your knees fall out to either side.</li>
+                                            <li>Draw your feet in as close to your body as is comfortable. Back off if you feel any pain in your knees.</li>
+                                            <li>Press the outer edges of your feet together strongly. The feet may begin to open like a book. You can encourage this with your hands or hold onto your big toes in a yoga toe lock.</li>
+                                            <li>Sit up tall with a long spine while keeping your shoulder blades on your back and your shoulders moving away from your ears.</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div>
+                                    <div class="timer_btn" onclick="myFunction1()"><button class="ybtn">Start</button></div>
+                                    <div class="timer" onclick="myFunction1()" id="countdown">00:00:05</div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                          <th>
+                            <div class="msg">
+                                <p id="msg">Times Up.. <a style="color: green;" href="yoga_pose_1.html">Restart</a></p>
+                            </div>
+                          </th>
+                        </tr>
+                    </table>
                 </th>
             </tr>
         </table>
