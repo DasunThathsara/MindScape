@@ -56,6 +56,16 @@ body{
   font-size: 100%;
 }
 
+.ctr{
+  display: grid;
+  z-index: 1;
+}
+
+.ctr_d{
+  display: none;
+  z-index: -1;
+}
+
 .welcome_footer{
     width: 100%;
     position: fixed;
@@ -482,18 +492,22 @@ img {
   margin-top: 10px;
 } */
 
+.yoga{
+  margin-top: 40%;
+}
+
 .yoga_options{
   border-radius: 20px;
   padding: 10px;
   text-align: left;
-  background-color: #fcf7caa2;
+  background-color: #fcf7ca6c;
   margin-top: 15px;
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.167);
 }
 
 .yh1{
   position: absolute;
-  top: 15px;
+  top: 10%;
   width: 95%;
   font-family: "Open Sans";
 }
@@ -502,7 +516,7 @@ img {
   border-radius: 20px;
   padding: 10px;
   /* text-align: left; */
-  background-color: #fcf7ca82;
+  background-color: #fcf7ca5e;
   margin-top: -20px;
   box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.167);
 }
@@ -521,8 +535,13 @@ ol li{
 }
 
 .yoga_dis{
+  display: grid;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.yoga_dis_d{
+  display: none;
 }
 
 .ybtn{

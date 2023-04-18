@@ -13,8 +13,11 @@ function myFunction() {
     var element = document.querySelector('.menu_section');
     element.classList.toggle("menu_section_d");
 
-    var element = document.querySelector('.notes');
-    element.classList.toggle("notes_d");
+    var element1 = document.querySelector('.notes');
+    element1.classList.toggle("notes_d");
+
+    var element2 = document.querySelector('.yoga_dis');
+    element2.classList.toggle("yoga_dis_d");
 }
 
 
