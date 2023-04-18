@@ -10,12 +10,11 @@ function redirectToPage() {
 }
 
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+    var element = document.querySelector('.menu_section');
+    element.classList.toggle("menu_section_d");
+
+    var element = document.querySelector('.notes');
+    element.classList.toggle("notes_d");
 }
 
 

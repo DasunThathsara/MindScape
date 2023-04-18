@@ -16,6 +16,46 @@ body{
     transition: 0.5s;
 }
 
+.menu_section{
+  display: none;
+  overflow-x: hidden;
+  background-image: url("../images/bg_2.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.menu_section_d{
+  display: grid;
+}
+
+.menu_section .details{
+  margin: 10%;
+}
+
+.menu_section .icon{
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  z-index: 1;
+}
+
+.menu_options{
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  background-color: #70a05b66;
+  margin-top: 15px;
+  box-shadow: 0 1px 15px 3px rgba(0, 0, 0, 0.167);
+  font-size: 100%;
+}
+
 .welcome_footer{
     width: 100%;
     position: fixed;
@@ -56,7 +96,7 @@ body{
     padding-top: 15%;
     padding-bottom: 5%;
     /* background-color: rgba(210, 213, 218, 0.9); */
-    background-color: rgba(4, 131, 51, 0.204);
+    background-color: rgba(45, 130, 76, 0.156);
     box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.299);
     border-radius: 20px;
     padding-left: 5%;
@@ -70,7 +110,7 @@ body{
     padding-top: 15%;
     padding-bottom: 5%;
     /* background-color: rgba(210, 213, 218, 0.9); */
-    background-color: rgba(4, 131, 51, 0.204);
+    background-color: rgba(45, 130, 76, 0.156);
     box-shadow: 0 2px 15px -2px rgba(0, 0, 0, 0.299);
     border-radius: 20px;
     padding-left: 5%;
@@ -108,7 +148,7 @@ body{
 } */
 
 .options{
-  background-color: rgba(4, 131, 51, 0.325);
+  background-color: rgba(4, 131, 51, 0.233);
   border-radius: 20px;
   padding: 15%;
   margin: 5px;  
@@ -150,7 +190,8 @@ a{
 }
 
 .bimg{
-    width: 5%;
+    width: 15px;
+    z-index: 1;
 }
 
 .header{
@@ -199,53 +240,26 @@ a{
     z-index: 1;
 }
 
+.nav_bar{
+  text-align: center;
+}
 
-.mobile-container {
-    max-width: 100%;
-    color: rgba(255, 0, 0, 0);
-    background-color: #ff000000;
-    border-radius: 10px;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #33333300;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  
-  .topnav #myLinks {
-    display: none;
-  }
+.nav_bar .bimg{
+  position: absolute;
+  top: 3%;
+  left: 4%;
+}
 
-  .topnav a {
-    color: rgb(0, 0, 0);
-    padding: 20px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  .topnav a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: rgb(0, 0, 0);
-  }
-  
-  .topnav a:hover {
-    background-color: #ffffff00;
-    color: black;
-  }
-  
-  .active {
-    background-color: #ffffff00;
-    color: white;
-  }
+.nav_bar .icon{
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  z-index: 1;
+}
 
+.gh1{
+  margin-top: 20%;
+}
   /*---------------- Reading Section -> top rated section ----------------*/
   
   .bottom-left {
@@ -303,20 +317,35 @@ a{
     background-size: 100% 100%, 100% 100%, 100% 31px;
     line-height: 31px;
     font-family: Arial, Helvetica, Sans-serif;
-    padding: 8px;
-}
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    font-size: 20px;
+  }
+  .notes_d {
+    display: none;
+  }
+
+  .textSpace{
+    position: absolute;
+    left: 0px;
+  }
 
 .notes:focus {
     outline: none;
 }
 
-.wfooter{
+/* .wfooter{
     border: 1px solid rgb(255, 255, 255);
     padding-top: 5%;
     padding-bottom: 5%;
     width: 100%;
     background-color: rgb(255, 255, 255);
     z-index: 1;
+} */
+
+.des{
+  margin-top: 60px;
 }
 
 
@@ -415,7 +444,7 @@ img {
 
 /*------------------------------Game Section------------------------------*/
 .gtable{
-    margin-top: 5%;
+    margin-top: 15%;
     width: 100%;
 }
 
@@ -488,6 +517,7 @@ ol li{
   font-size: 25px;
   font-family: "Open Sans";
   font-weight: 400;
+  z-index: -1;
 }
 
 .yoga_dis{
@@ -508,4 +538,8 @@ ol li{
     transition: 0.5s;
     border: 0px;
     box-shadow: 0 1px 15px -1px rgba(0, 0, 0, 0.167);
+}
+
+.yoga_des{
+  margin-top: 30%;
 }
