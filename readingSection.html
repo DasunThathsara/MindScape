@@ -11,25 +11,117 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <script src="javascript/script.js"></script>
 </head>
-<body>
-
-    <!-------------------------Navigation bar------------------------->
-    <div class="mobile-container">
-        <div class="topnav">
-            <a href="dashboard.html" class="active"><img class="bimg" src="images/back.png" alt="Header animal" class="img"></a>
-            <div id="myLinks">
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div> 
-    </div>
+<body style="height: 130vh;">
     
     <!-------------------------Book lists------------------------->
     <div class="welcome">
+        <div class="nav_bar">
+            <a href="dashboard.html" class="active"><img class="bimg" src="images/back.png" alt="Header animal" class="img"></a>
+            <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="menu_section menu_section_y">
+            <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <div class="details">
+                <table class="">
+                    <tr>
+                        <th>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/chat.png"></td>
+                                        <td><p>Chat with me</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="yogaSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/yoga.png"></td>
+                                        <td><p>Yoga</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="gameSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/game.png"></td>
+                                        <td><p>Games for you</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="readingSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/reading.png"></td>
+                                        <td><p>Reading Time</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="meditationSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/meditation.png"></td>
+                                        <td><p>Meditation</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="Music Player/index.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/music.png"></td>
+                                        <td><p>Music</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/drawing.png"></td>
+                                        <td><p>Paint with me</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="writingSpace.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/writing.png"></td>
+                                        <td><p>writing Space</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <div class="message">
             <center><h1 class="rh1">Let's Read!!!!</h1></center>
         </div>
@@ -43,10 +135,15 @@
         <table class="readingSection">
             <tr>
                 <th style="width: 50%;">
-                    <a href="#">
+                    <a href="books/calm.pdf" download="books/calm.pdf">
                         <div class="options">
-                            <div class="top-left" style="padding-left: 5%;"><p style="font-size: 90%;">Mindy River</p></div>
-                            <div class="top-right" style="padding-top: 13px; padding-right: 49%;">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">Calm</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 50%;" src="images/book1.png" alt="">
+                                <hr />
                                 <p style="font-size: 7px;">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -55,20 +152,19 @@
                                     <span class="fa fa-star checked"></span>
                                 </p>
                             </div>
-                            <br />
-                            <img src="images/book1.png" alt="">
-                            <hr />
-                            <p style="font-size: 8px;">
-                                You'll learn how to use mindfulness meditation to cult...
-                            </p>
                         </div>
                     </a>
                 </th>
                 <th style="width: 50%;">
-                    <a href="#">
+                    <a href="books/Oh Mind Relax Please.pdf">
                         <div class="options">
-                            <div class="top-right" style=" padding-right: 16%;"><p style="font-size: 90%;"><p>Positivity 101</p></div>
-                            <div class="top-right" style="padding-top: 13px; padding-right: 4%;">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">Oh Mind Relax</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 55%;" src="images/book2.png" alt="">
+                                <hr />
                                 <p style="font-size: 7px;">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -77,22 +173,21 @@
                                     <span class="fa fa-star"></span>
                                 </p>
                             </div>
-                            <br />
-                            <img src="images/book2.png" alt="">
-                            <hr />
-                            <p style="font-size: 8px;">
-                                You'll also discover the power of positive affirmations, the benef...
-                            </p>
                         </div>
                     </a>
                 </th>
             </tr>
             <tr>
                 <th style="width: 50%;">
-                    <a href="#">
+                    <a href="books/Ikigai.pdf">
                         <div class="options">
-                            <div class="top-left" style="padding-top: 44%; padding-left: 5%;"><p style="font-size: 90%;">Magic Optim...</p></div>
-                            <div class="top-right" style="padding-top: 47%; padding-right: 49%;">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">Ikigai</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 50%;" src="images/book3.png" alt="">
+                                <hr />
                                 <p style="font-size: 7px;">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -101,20 +196,19 @@
                                     <span class="fa fa-star"></span>
                                 </p>
                             </div>
-                            <br />
-                            <img src="images/book3.png" alt="">
-                            <hr />
-                            <p style="font-size: 8px;">
-                                In this book, you will discover the power of positive thi...
-                            </p>
                         </div>
                     </a>
                 </th>
                 <th style="width: 50%;">
-                    <a href="#">
+                    <a href="books/No More Stress.pdf">
                         <div class="options">
-                            <div class="top-right" style="padding-top: 43%; padding-right: 16%;"><p style="font-size: 90%;"><p>Calm Within</p></div>
-                            <div class="top-right" style="padding-top: 47%; padding-right: 4%;">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">No more stress</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 45%;" src="images/book4.png" alt="">
+                                <hr />
                                 <p style="font-size: 7px;">
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
@@ -123,12 +217,50 @@
                                     <span class="fa fa-star"></span>
                                 </p>
                             </div>
-                            <br />
-                            <img src="images/book4.png" alt="">
-                            <hr />
-                            <p style="font-size: 8px;">
-                                You'll be able to find stillness in the midst of chaos and cu...
-                            </p>
+                        </div>
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <th style="width: 50%;">
+                    <a href="books/Self Talk for Calmer You.pdf">
+                        <div class="options">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">Self talk for calmer</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 35%;" src="images/book1.png" alt="">
+                                <hr />
+                                <p style="font-size: 7px;">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </th>
+                <th style="width: 50%;">
+                    <a href="books/the mindful day.pdf">
+                        <div class="options">
+                            <div class="top-right">
+                                <div>
+                                    <p style="max-width: 100%;" class="rdes">The Mindful day</p>
+                                </div>
+                                <br />
+                                <img class="rdes" style="width: 52%;" src="images/book2.png" alt="">
+                                <hr />
+                                <p style="font-size: 7px;">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
+                            </div>
                         </div>
                     </a>
                 </th>
@@ -136,15 +268,15 @@
         </table>
         
         <div class="welcome_footer footer_b">
-            <img class="welcome_footer footer_b" src="images/reading footer.png" alt="">
-            <div class="bottom-left" style="padding-bottom: 70%; padding-left: 10%;"><h3>Top rated</h3></div>
-            <div class="bottom-left" style="padding-bottom: 60%; padding-left: 10%;"><a href="#" style="color:black"><p>Mindy River</p></a></div>
-            <div class="bottom-left" style="padding-bottom: 55%; padding-left: 10%;"><a href="#" style="color:black"><p>Magic of Optimism</p></a></div>
-            <div class="bottom-left" style="padding-bottom: 50%; padding-left: 10%;"><a href="#" style="color:black"><p>Weekend dayout</p></a></div>
+            <img class="welcome_footer" src="images/reading footer.png" alt="">
+            <!-- <div class="bottom-left" style="padding-bottom: 70%; padding-left: 10%;"><h3>Top rated</h3></div>
+            <div class="bottom-left" style="padding-bottom: 60%; padding-left: 10%;"><a href="#" style="color:black"><p>Calm</p></a></div>
+            <div class="bottom-left" style="padding-bottom: 55%; padding-left: 10%;"><a href="#" style="color:black"><p>Ikigai</p></a></div>
+            <div class="bottom-left" style="padding-bottom: 50%; padding-left: 10%;"><a href="#" style="color:black"><p>The Mindful day</p></a></div>
             
             <div class="bottom-right" style="padding-bottom: 65%; padding-right: 0%;"><img src="images/header anim.png" alt="Header animal" class="img"></div>
 
-            <div class="bottom-right" style="padding-bottom: 60%; padding-right: 20%;">
+            <!-- <div class="bottom-right" style="padding-bottom: 60%; padding-right: 20%;">
                 <p>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -170,7 +302,7 @@
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                 </p>
-            </div>
+            </div> --> -->
         </div>
     </div>
 </body>
