@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Counselor Chatbot</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  </head>
+  <body>
+    <main>
+        <div class="chat">
+            <div class="contact bar">
+                    <img src="bot.png" class="pic"></img>
+                <div class="bar name">
+                    Counselor Chatbot
+                </div>
+            </div>
+            <div class="messages" id="chat">
+                <div class="time">
+                Today at 11:41
+                </div>
+                <div id="chat-log">
+                    
+                </div>
+                <div class="message message--sent">
+                    <div class="typing typing-1"></div>
+                    <div class="typing typing-2"></div>
+                    <div class="typing typing-3"></div>
+                </div>
+            </div>
+            <div class="input">
+                <form action="">
+                    <i class="fas fa-camera"></i>
+                    <i class="far fa-laugh-beam"></i>
+                    <i class="fas fa-microphone"></i>
+                    <input type="text" name="message" id="message">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>  
+    </main>
+    <script>
+		let messages = []
+        //const messageSent = document.getElementsByClassName('message message--sent');
+		const chatLog = document.getElementById('chat-log');
+		const message = document.getElementById('message');
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const messageText = message.value;
+			const newMessage = {"role": "user", "content": `${messageText}`}
+			messages.push(newMessage)
+			message.value = '';
+			const messageElement = document.createElement('div');
+			messageElement.classList.add('message');
+			messageElement.classList.add('message--sent');
+			messageElement.innerHTML = `
+				<div class="message__text">${messageText}</div>
+			`;
+			chatLog.appendChild(messageElement);
+			chatLog.scrollTop = chatLog.scrollHeight;
+			fetch('https://azurecounselorfunction.azurewebsites.net/api/CounselorBotFunction?', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					messages
+                    //message: messageText
+				})
+			})
+			.then(res => res.json())
+			.then(data => {
+                //const messageReceived = document.getElementsByClassName('message message--sent');
+				let newAssistantMessage = {"role": "assistant", "content": `${data.completion.content}`}
+				messages.push(newAssistantMessage)
+				const messageElement = document.createElement('div');
+				messageElement.classList.add('message');
+				messageElement.classList.add('message--received');
+				messageElement.innerHTML = `
+					<div class="message__text">${data.completion.content}</div>
+				`;
+				chatLog.appendChild(messageElement);
+				chatLog.scrollTop = chatLog.scrollHeight;
+			})
+		})
+	</script>
+  </body>
+</html>
