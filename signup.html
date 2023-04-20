@@ -15,18 +15,20 @@
 <body style="height: 100%;">
     <div class="welcome">
         <div class="signup_div">
-            <form>
+            <form id="signupform">
                 <h1 style="font-size: 40px;">Sign up</h1>
                 <br />
                 <input type="text" id="inputName" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Name" required>
                 <br />
                 <input type="email" id="inputEmail" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Email address" required>
                 <br />
-                <input type="text" id="inputName" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Phone number" required>
+                <input type="text" id="phoneNo" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Phone number" required>
                 <br />
-                <input type="text" id="inputName" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Password" required>
+                <input type="text" id="pwd" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Password" required>
                 <br />
-                <input type="text" id="inputName" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Confirm Password" required>
+                <input type="text" id="pwdRepeat" class="form-control" style="border-radius: 10px; background-color: rgba(255, 255, 255, 0.4);" aria-describedby="passwordHelpInline" placeholder="Confirm Password" required>
+                <br />
+                <div id="signupErrorContainer"></div>
                 <br />
                 <button type="submit" class="btn" style="border-radius: 50px; background-color: #04721796; width:100%; color: white;">Log in</button>
                 <br /><br />
@@ -35,5 +37,6 @@
             </form>
         </div>
     </div>
+    <script src="javascript/signup.js"></script>
 </body>
 </html>

@@ -1,10 +1,17 @@
+let userName = "admin";
+let pwd = "1234";
+
 function redirectToPage() {
     var userID = document.getElementById("userID").value;
     var password = document.getElementById("password").value;
 
-    if (userID == "admin" && password == "1234") {
+    if(localStorage.getItem('updatedUsername')) {
+      pwd = localStorage.getItem('updatedPassword');
+      userName = localStorage.getItem('updatedUsername');
+    }
+    if (userID == userName && password == pwd) {
         window.location.href = "dashboard.html";
-    } else {
+    }else {
         alert("Incorrect user name or password!");
     }
 }
