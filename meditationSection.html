@@ -8,6 +8,9 @@
         <link rel="icon" type="image/x-icon" href="images/logo.png">
 
         <link rel="stylesheet" href="css/style.css">
+        
+    <link rel="stylesheet" href="timer/style.css">
+    <script src="timer/script.js" defer></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -130,25 +133,30 @@
                 <p style="padding-left: 6%; padding-right: 6%;">Let’s enter into the quiet world that's already there - buried under the 50,000 thoughts the average person thinks every day.</p>
             </div>
 
-            <div class="mySlides fade">
-                <h1>Meekata daanna ekk na 1</h1>
-            </div>
-
-            <div class="mySlides fade">
-                <h1>Meekata daanna ekk na 2</h1>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        <div>
+                            <div class="timer_btn" onclick="myFunction1()"><button class="ybtn">Start</button></div>
+                            <div class="timer" onclick="myFunction1()" id="countdown">00:05:00</div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="msg">
+                        <audio id="myAudio">
+                            <source src="timer/music.mp3" type="audio/mpeg">
+                        </audio>
+                        <p id="msg">Times Up.. <a style="color: green;" href="meditationSection.html">Restart</a></p>
+                    </div>
+                  </th>
+                </tr>
+            </table>
         </div>
         <br>
-
-        <div class="mfooter">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
 
         <script>
             let slideIndex = 1;
