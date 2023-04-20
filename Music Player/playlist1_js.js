@@ -5,32 +5,32 @@ const music = new Audio('vande.mp3');
 const songs = [
     {
         id:"7",
-        songName: `Agar Tum Sath Ho <br><div class="subtitle">Tamashaa</div>`,
+        songName: `Relaxing <br><div class="subtitle">track 01</div>`,
         poster: "img1/7.jpg",
     },
     {
         id:"8",
-        songName: `Suna Hai <br><div class="subtitle">Neha Kakker</div>`,
+        songName: `Easy Lifestyle <br><div class="subtitle">track 02</div>`,
         poster: "img1/8.jpg",
     },
     {
         id:"9",
-        songName: `Dilber <br><div class="subtitle">Satyameva Jayate</div>`,
+        songName: `Coniferous forest <br><div class="subtitle">track 03</div>`,
         poster: "img1/9.jpg",
     },
     {
         id:"10",
-        songName: `Duniya <br><div class="subtitle">Luka Chuppi</div>`,
+        songName: `The Beat of Nature <br><div class="subtitle">track 04</div>`,
         poster: "img1/10.jpg",
     },
     {
         id:"11",
-        songName: `Lagdi Lahore Di <br><div class="subtitle">Street Dancer 3D</div>`,
+        songName: `Forest Lullaby <br><div class="subtitle">track 05</div>`,
         poster: "img1/11.jpg",
     },
     {
         id:"12",
-        songName: `Putt Jatt Da <br><div class="subtitle">Putt Jatt Da</div>`,
+        songName: `Beautiful Trip <br><div class="subtitle">track 06</div>`,
         poster: "img1/12.jpg",
     },
 ]
@@ -254,7 +254,13 @@ right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
 
-function myFunction() {
-    var element = document.querySelector('.play_area');
-    element.classList.toggle("play_area_d");
- }
+// function myFunction() {
+//     var element = document.querySelector('.play_area');
+//     element.classList.toggle("play_area_d");
+//  }
+
+
+ function myFunction() {
+    var element = document.querySelector('.menu_section');
+    element.classList.toggle("menu_section_d");
+}
