@@ -31,6 +31,10 @@ body{
   left: 0px;
 }
 
+.menu_section_y{
+  height: 145vh;
+}
+
 .menu_section_d{
   display: grid;
 }
@@ -234,12 +238,26 @@ a{
     padding-right: 4%;
 }
 
+.readingSection_d{
+  display: none;
+  margin-top: 1%;
+  width: 95%;
+  top: 20%;
+  position: absolute;
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
 .footer_b{
     border: 1px solid rgb(255, 255, 255);
     border-top-color:rgba(0, 0, 0, 0.653);
     background-color: rgb(255, 255, 255);
     z-index: 1;
     box-shadow: 0 -20px 30px 1px rgb(255, 255, 255);
+}
+
+.footer_b_d{
+  display: none;
 }
 
 .Rdimg{
@@ -287,10 +305,15 @@ a{
   }
   
   .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
+    padding: 0px;
+    margin: 0px;
     z-index: 1;
+  }
+
+  .rdes{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
   }
   
   .bottom-right {
