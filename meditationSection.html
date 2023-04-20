@@ -8,24 +8,120 @@
         <link rel="icon" type="image/x-icon" href="images/logo.png">
 
         <link rel="stylesheet" href="css/style.css">
+        
+    <link rel="stylesheet" href="timer/style.css">
+    <script src="timer/script.js" defer></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     </head>
     <body style="height: 100%">
-        <!-------------------------Navigation bar------------------------->
-        <div class="mobile-container">
-            <div class="topnav">
-                <a href="dashboard.html" class="active"><img class="bimg" src="images/back.png" alt="Header animal" class="img"></a>
-                <div id="myLinks">
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div> 
+        <div class="nav_bar">
+            <a href="dashboard.html" class="active"><img class="bimg" src="images/back.png" alt="Header animal" class="img"></a>
+            <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="menu_section">
+            <a class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            <div class="details">
+                <table class="">
+                    <tr>
+                        <th>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/chat.png"></td>
+                                        <td><p>Chat with me</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="yogaSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/yoga.png"></td>
+                                        <td><p>Yoga</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="gameSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/game.png"></td>
+                                        <td><p>Games for you</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="readingSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/reading.png"></td>
+                                        <td><p>Reading Time</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="meditationSection.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/meditation.png"></td>
+                                        <td><p>Meditation</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="Music Player/index.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/music.png"></td>
+                                        <td><p>Music</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/drawing.png"></td>
+                                        <td><p>Paint with me</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <a href="writingSpace.html" style="text-decoration: none; color: black;">
+                                <table class="menu_options">
+                                    <tr>
+                                        <td class="menu_img" width="45%"><img src="images/writing.png"></td>
+                                        <td><p>writing Space</p></td></a>
+                                    </tr>
+                                </table>
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
         </div>
     
         <!-------------------------Slide Show------------------------->
@@ -37,52 +133,64 @@
                 <p style="padding-left: 6%; padding-right: 6%;">Let’s enter into the quiet world that's already there - buried under the 50,000 thoughts the average person thinks every day.</p>
             </div>
 
-            <div class="mySlides fade">
-                <h1>Meekata daanna ekk na 1</h1>
-            </div>
-
-            <div class="mySlides fade">
-                <h1>Meekata daanna ekk na 2</h1>
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>
+                        <div>
+                            <div class="timer_btn" onclick="myFunction1()"><button class="ybtn">Start</button></div>
+                            <div class="timer" onclick="myFunction1()" id="countdown">00:05:00</div>
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                  <th>
+                    <div class="msg">
+                        <audio id="myAudio">
+                            <source src="timer/music.mp3" type="audio/mpeg">
+                        </audio>
+                        <p id="msg">Times Up.. <a style="color: green;" href="meditationSection.html">Restart</a></p>
+                    </div>
+                  </th>
+                </tr>
+            </table>
         </div>
         <br>
-
-        <div class="mfooter">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
 
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
 
             function plusSlides(n) {
-            showSlides(slideIndex += n);
+                showSlides(slideIndex += n);
             }
 
             function currentSlide(n) {
-            showSlides(slideIndex = n);
+                showSlides(slideIndex = n);
             }
 
             function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" dactive", "");
+                }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " dactive";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" dactive", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " dactive";
+
+            function myFunction() {
+                var element = document.querySelector('.menu_section');
+                element.classList.toggle("menu_section_d");
             }
         </script>
 
