@@ -2,7 +2,7 @@
 
 <br />
 <a href="https://dasunthathsara.github.io/MindScape/">Web</a>
-<br />
+&nbsp;
 <a href="https://github.com/DasunThathsara/MindScape/releases/tag/mindRelaxing">APK</a>
 <hr />
 <p>
