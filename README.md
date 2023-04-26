@@ -10,7 +10,6 @@
  Your mental health will benefit greatly from this app. Your mind can unwind as a result.
 </p>
 
-<br />
 <hr />
   <p align="center">
     <a href="https://github.com/UltiRequiem/python-projects-for-intermediates/blob/main/LICENSE">
