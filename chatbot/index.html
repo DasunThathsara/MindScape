@@ -61,7 +61,7 @@
 			`;
 			chatLog.appendChild(messageElement);
 			chatLog.scrollTop = chatLog.scrollHeight;
-			fetch('http://localhost:7071/api/gptfunction', {
+			fetch('https://dasunazuregpt.azurewebsites.net/api/gptfunction?', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json'
